@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="instruments">
+    <img src="assets/images/acoustic.jpg" id="clapton">
+    <img src="assets/images/guitar.jpg">
+    <img src="assets/images/bass.jpg">
+    <img src="assets/images/drums.jpg">
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+  //on-click alert
+ /* $("#clapton").on("click", function() {
+    alert("Rock on dude!");
+    console.log(alert);
+  });
+*/
+
+  //create counter to track score
+  var counter = 0
+  $(".instruments>img").on("click", function(){
+    counter += 80;
+    alert("Acoustic brings your neighbor's frustration to: " + counter);
+  })
+
+ 
+
+  </script>
+
+</body>
+
+</html>
