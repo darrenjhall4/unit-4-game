@@ -1,4 +1,19 @@
+body {
+  background-color: rgb(26, 88, 26);
+  color: white;
+}
+
+
 img {
   width: 200px;
   height: 200px;
+  border-width: 5px;
+  border-style: dashed;
+  border-color: white;
+  margin: 10px;
+}
+
+.container {
+  width: 1200px;
+  align-content: center;
 }

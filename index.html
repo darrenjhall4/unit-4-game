@@ -6,35 +6,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
 <body>
-  <div class="instruments">
-    <img src="assets/images/acoustic.jpg" id="clapton">
-    <img src="assets/images/guitar.jpg">
-    <img src="assets/images/bass.jpg">
-    <img src="assets/images/drums.jpg">
+
+  <div class="container">
+    <h1>Rockin' Racket:
+      <h2>Get Ready For That Upcoming Gig Without Pissing Off Old Man River Next Door</h2>
+      <h3>Your Goal Is To:</h3>
+      <ul>
+        <li>Host band practice without exceeding your neighbor's patience</li>
+        <li>Find his sweet spot by playing a song that reminds him of the good times</li>
+        <li>If you exceed his threshold with all that racket, he's calling the cops and shutting it down :-(</li>
+        <li>If you reach the right level, he'll kick back and listen (and probably tell you all about the 70's</li>
+      </ul>
+
+    </h1>
+
+    <div class="tool">
+      <img src="assets/images/acoustic.jpg" id="clapton">
+      <img src="assets/images/guitar.jpg" id="hendrix">
+      <img src="assets/images/bass.jpg" id="flea">
+      <img src="assets/images/drums.jpg" id="carter">
+    </div>
+
+    <div>
+      <h3>Neighbor's sweet spot: <span id="targetNumber"></span></h3>
+    </div>
+
+
+    <div>
+      <h3>Your current total is: <span id="currentTotal"></span></h3>
+    </div>
+
+    <div>
+      <h3>Wins: <span id="wins"></span></h3>
+
+      <h3>Losses: <span id="losses"></span></h3>
+    </div>
+
+
+
+
   </div>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+  <script type="text/javascript" src="assets/javascript/game.js">
 
-<script type="text/javascript">
-  //on-click alert
- /* $("#clapton").on("click", function() {
-    alert("Rock on dude!");
-    console.log(alert);
-  });
-*/
+    
 
-  //create counter to track score
-  var counter = 0
-  $(".instruments>img").on("click", function(){
-    counter += 80;
-    alert("Acoustic brings your neighbor's frustration to: " + counter);
-  })
-
- 
 
   </script>
 
