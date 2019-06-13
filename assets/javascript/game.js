@@ -13,16 +13,16 @@ var ranValue4 = Math.floor(Math.random() * 12);
 
 //adds wins & losses
 $("#wins").text(wins);
-$("#losses").text(wins);
+$("#losses").text(losses);
 
 //restarts game
 function restart() {
   randomValue = Math.floor(Math.random() * 101 + 19);
   $("#targetNumber").text(randomValue);
-  var ranValue1 = Math.floor(Math.random() * 12);
-  var ranValue2 = Math.floor(Math.random() * 12);
-  var ranValue3 = Math.floor(Math.random() * 12);
-  var ranValue4 = Math.floor(Math.random() * 12);
+  ranValue1 = Math.floor(Math.random() * 12);
+  ranValue2 = Math.floor(Math.random() * 12);
+  ranValue3 = Math.floor(Math.random() * 12);
+  ranValue4 = Math.floor(Math.random() * 12);
   total = 0;
 }
 
@@ -95,45 +95,3 @@ $("#carter").on("click", function(){
 
 
 });
-
-
-/*
-var sweetSpot = 24;
-var myArray = ["acoustic", "electric", "bass", "drums"]
-//span/h1 matches frustration goal
-$("#goal").text(sweetSpot);
-*/
-
-//////////////////////////////////////////////////////////
-
-//create counter to track score
-/*
-var counter = 0
-$(".instruments>#clapton").on("click", function () {
-  counter += 8;
-  alert("Sweet acoustic melodies! Your neighbor's frustration is at: " + counter);
-
-  $(".instruments>#hendrix").on("click", function () {
-    counter += 15;
-    alert("Shredding! Your neighbor's frustration is at: " + counter);
-
-    $(".instruments>#flea").on("click", function () {
-      counter += 20;
-      alert("Slappin the bass! Your neighbor's frustration is at: " + counter);
-
-      $(".instruments>#carter").on("click", function () {
-        counter += 25;
-        alert("DRUM $OLO! Your neighbor's frustration is at: " + counter);
-
-        //if you reach target frustration
-        if (counter === maxFrustration) {
-          alert("Right on! You know, back in my day.....");
-        }
-
-        //Neighbor calls cops if you exceed maximum frustration
-        else if (counter > maxFrustration) {
-          alert("THAT'S IT, I'M CALLING THE COPS!")
-        }
-
-      });
-    */
