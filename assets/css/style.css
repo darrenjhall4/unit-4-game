@@ -16,4 +16,5 @@ img {
 .container {
   width: 1200px;
   align-content: center;
+  margin: auto;
 }
